@@ -1,0 +1,13 @@
+; config.ini
+
+[TELEGRAM]
+TOKEN=codi_token_bot_telegram
+URL=url_del_nostre_servidor_webhook_on_correra_el_nostre_bot
+PORT=el_numero_de_port
+CERT=arxiu_certificat.pem
+KEY=arxiu_certificat.key
+[DATABASE]
+BD_HOST=servidor_base_de_dades
+BD_USER=usuari
+BD_PASS=contrasenya
+BD_NAME=nom_base_de_dades
