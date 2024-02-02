@@ -61,7 +61,7 @@ def start(bot, update):
     
     #Recollim informació de l'usuari
     idUsuari = update.message.from_user.id
-    nomUsuari = str(update.message.from_user.first_name)
+    nomUsuari = b'' + update.message.from_user.first_name.encode('utf-8')
     
     logger.info("L'usuari %s ha executat la comanda /start", idUsuari)
     
@@ -110,7 +110,7 @@ def help(bot, update):
     
     #Recollim informació de l'usuari
     idUsuari = update.message.from_user.id
-    nomUsuari = str(update.message.from_user.first_name)
+    nomUsuari = b'' + update.message.from_user.first_name.encode('utf-8')
     
     logger.info("L'usuari %s ha executat la comanda /help", idUsuari)
     
@@ -123,7 +123,7 @@ def topic(bot, update):
     
     #Recollim informació de l'usuari
     idUsuari = update.message.from_user.id
-    nomUsuari = str(update.message.from_user.first_name)
+    nomUsuari = b'' + update.message.from_user.first_name.encode('utf-8')
     
     logger.info("L'usuari %s ha executat la comanda /topic", idUsuari)
     
@@ -255,7 +255,7 @@ def stats(bot, update):
     
     #Recollim informació de l'usuari
     idUsuari = update.message.from_user.id
-    nomUsuari = str(update.message.from_user.first_name)
+    nomUsuari = b'' + update.message.from_user.first_name.encode('utf-8')
     
     logger.info("L'usuari %s ha executat la comanda /stats", idUsuari)
     
@@ -316,7 +316,7 @@ def reset(bot, update):
     
     #Recollim informació de l'usuari
     idUsuari = update.message.from_user.id
-    nomUsuari = str(update.message.from_user.first_name)
+    nomUsuari = b'' + update.message.from_user.first_name.encode('utf-8')
     logger.info("L'usuari %s ha executat la comanda /reset", idUsuari)
     
     #Creem connexió a la base de dades
@@ -354,7 +354,7 @@ def question(bot, update):
     
     #Recollim informació de l'usuari
     idUsuari = update.message.from_user.id
-    nomUsuari = str(update.message.from_user.first_name)
+    nomUsuari = b'' + update.message.from_user.first_name.encode('utf-8')
     logger.info("L'usuari %s ha executat la comanda /question", idUsuari)
     
     #Obrim la connexió amb la base de dades
